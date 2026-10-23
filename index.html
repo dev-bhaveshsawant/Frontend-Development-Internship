@@ -1,16 +1,31 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello World Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Hello World! 👋</h1>
-        <p>Welcome to my Frontend Development Internship.</p>
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message"></p>
+        <h1>My To-Do List</h1>
+        <p>Organize your day, one task at a time.</p>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addBtn">Add Task</button>
+        </div>
+
+        <div class="task-summary">
+            <span id="totalTasks">Total: 0</span>
+            <span id="completedTasks">Completed: 0</span>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <button id="clearBtn" class="clear-btn">Clear All Tasks</button>
     </div>
 
     <script src="script.js"></script>
